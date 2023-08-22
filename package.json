@@ -45,7 +45,7 @@
   },
   "engineStrict": true,
   "engines": {
-    "node": "~20.5.1",
+    "node": "~18.16.1",
     "npm": "~9.8.0"
   },
   "postcss": {
