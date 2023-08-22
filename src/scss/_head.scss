@@ -1,0 +1,166 @@
+.head{
+    background: no-repeat center url(../img/background-menu.png) ;
+    font-family: 'Poppins-Regular';
+    height: 901px;
+    &-info{
+       
+    width: 70%;
+    padding-top: 55px;
+    margin: 0 auto;
+    @media(max-width: 768px){
+        padding-top: 24px;
+        margin-left: 12px;
+    }
+    &_burger {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-right: 24px;
+        border-radius: 50%;
+        background: no-repeat center $color-icons url(../img/icons/burger.png);
+        @media(min-width: 1366px){
+            display: none;
+        }
+      }
+    @media(min-width: 1366px){
+        max-width: 1168px;
+    }
+    @media(min-width: 768px){
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    &_menu{
+        @media(max-width: 1366px){
+            display: none
+        }
+    }
+    &_menu a{
+        position: relative;
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+    }
+    &_menu a::before {
+        content: '';
+        position: absolute;
+        left: 0; bottom: -5px;
+        width: 0;
+        height: 1.5px;
+        background-color: $color-text;
+        transition: width 0.5s;
+    }
+    &_menu a:hover:before {
+        width: 100%;
+    }
+    &_menu a:not(:first-child){
+      margin-left: 45px;
+    }
+    &_tell{
+        display: block;
+        height: 24px;
+        padding-top: 4px;
+        padding-left: 35px;
+        color: #fff;
+        background: no-repeat url(../img/icons/tell.svg);
+        @media(max-width: 768px){
+            display: block;
+           margin-top: 24px;
+        }
+    }
+    }
+
+    &-content{
+        margin: 0 auto;
+        max-width: 1168px;
+        color: #fff;
+        padding-top: 154px;
+        &_timeopen{
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+            letter-spacing: 1.44px;
+            @media(max-width: 768px){
+                padding-left: 12px;
+                font-size: 16px;
+                }
+        }
+        &_text{
+            padding-top: 24px;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 88px;
+            @media(max-width: 768px){
+                padding-left: 12px;
+                font-size: 24px;
+                }
+        }
+        &_button{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            @media(max-width: 768px){
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                }
+            .social-media-button{
+                display: flex;
+                align-items: center;
+                @media(max-width: 768px){
+                margin-top: 24px;
+                }
+                a{
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                    margin-left: 25px;
+                    text-decoration: none;
+                    border: solid 2px #fff;
+                    border-radius: 50%;
+                    color: #fff;
+                    font-size: 16px;
+                    text-align: center;
+                    padding-top: 13px;
+                }
+                a:hover{
+                    transition: background 1s;
+                    background: #fff;
+                    color: black;
+                 }
+                a:first-child{
+                    margin-left: 0;
+                }
+            }
+        }
+        &_button button{
+            cursor: pointer;
+            border: none;
+            width: 270px;
+            height: 100px;
+            background: $color-icons;
+            color: #fff;
+            font-size: 18px;
+        }
+         &_button button:hover{
+            transition: background 1s;
+            background: #fff;
+            color: black;
+         }
+        
+        
+    }
+}
+.head-info-mobile{
+    @media(max-width: 768px){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    @media(min-width: 768px){
+        display: flex;
+        align-items: center;
+        }
+}

@@ -1,0 +1,14 @@
+@import './normalize.css';
+@import '../../node_modules//swiper/swiper-bundle.min.css';
+@import './fonts';
+@import './variables';
+@import './burger';
+@import './head';
+@import "./schedule";
+@import "./reviews" ;
+@import "./range";
+@import "./gallery";
+@import "./feedback";
+body{
+    font-family: 'Poppins-Regular';
+}
